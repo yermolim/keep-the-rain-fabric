@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "xyz.yermolim.keeptherain.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+  ],
+  "client": [
+    "KeepTheRainMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

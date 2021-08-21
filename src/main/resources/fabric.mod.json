@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "keeptherain",
+  "version": "${version}",
+
+  "name": "Keep The Rain!",
+  "description": "A simple server side mod that prevents rain timer from resetting after sleep and gives a chance for rain to continue after players woke up.",
+  "authors": [
+    "yermolim"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/yermolim/keep-the-rain-fabric",
+    "issues": "https://github.com/yermolim/keep-the-rain-fabric/issues"
+  },
+
+  "license": "MIT",
+  "icon": "assets/keeptherain/logo.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "xyz.yermolim.keeptherain.KeepTheRain"
+    ],
+    "modmenu": [
+      "xyz.yermolim.keeptherain.config.autoconfig.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "keeptherain.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
